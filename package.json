@@ -9,7 +9,7 @@
     "lint": "eslint",
     "format": "bunx prettier --write .",
     "format:check": "bunx prettier --check .",
-    "validate:code": "npx -y react-doctor@latest .",
+    "validate:code": "bunx -y react-doctor@latest .",
     "prepare": "husky"
   },
   "dependencies": {

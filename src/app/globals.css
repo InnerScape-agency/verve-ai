@@ -1,26 +1,187 @@
 @import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* font family */
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+
+  /* colors */
+  --color-primary: #b4aef6;
+  --color-secondary: #f2b018;
+  --color-tertiary: #29c979;
+
+  --color-danger: #ef4444;
+  --color-warning: #eab308;
+  --color-success: #22c55e;
+
+  --color-dark: #000000;
+  --color-dark-bg: #111111;
+  --color-light-bg: #f2f0e8;
+
+  /* color shades */
+  --color-primary-100: #f8f7ff;
+  --color-primary-200: #d7d4fd;
+  --color-primary-300: #b4aef6;
+  --color-primary-400: #9d98dc;
+  --color-primary-500: #8882c3;
+  --color-primary-600: #736ea9;
+  --color-primary-700: #5f5a90;
+  --color-primary-800: #4c4877;
+  --color-primary-900: #3a375d;
+  --color-primary-950: #292644;
+
+  --color-secondary-100: #fff0e8;
+  --color-secondary-200: #ffc8b6;
+  --color-secondary-300: #ffae84;
+  --color-secondary-400: #ff8d51;
+  --color-secondary-500: #f0661d;
+  --color-secondary-600: #ce4f0c;
+  --color-secondary-700: #ac3c00;
+  --color-secondary-800: #8a3000;
+  --color-secondary-900: #682400;
+  --color-secondary-950: #461800;
+
+  --color-dark-50: #fafafa;
+  --color-dark-200: #e0e0e0;
+  --color-dark-400: #b8b8b8;
+  --color-dark-500: #a3a3a3;
+  --color-dark-600: #8f8f8f;
+  --color-dark-700: #7a7a7a;
+  --color-dark-800: #666666;
+  --color-dark-900: #3d3d3d;
+
+  --color-status_danger-50: #fef2f2;
+  --color-status_danger-100: #fee2e2;
+  --color-status_danger-300: #fca5a5;
+  --color-status_danger-400: #f87171;
+  --color-status_danger-500: #ef4444;
+  --color-status_danger-600: #dc2626;
+  --color-status_danger-700: #b91c1c;
+  --color-status_danger-900: #7f1d1d;
+  --color-status_danger-950: #450a0a;
+
+  --color-warning_status-50: #fefce8;
+  --color-warning_status-100: #fef9c3;
+  --color-warning_status-200: #fef08a;
+  --color-warning_status-300: #fde047;
+  --color-warning_status-400: #facc15;
+  --color-warning_status-500: #eab308;
+  --color-warning_status-600: #ca8a04;
+  --color-warning_status-700: #a16207;
+  --color-warning_status-800: #854d0e;
+  --color-warning_status-950: #422006;
+
+  --color-status_success-50: #f0fdf4;
+  --color-status_success-100: #dcfce7;
+  --color-status_success-200: #bbf7d0;
+  --color-status_success-300: #86efac;
+  --color-status_success-400: #4ade80;
+  --color-status_success-500: #22c55e;
+  --color-status_success-600: #16a34a;
+  --color-status_success-700: #15803d;
+  --color-status_success-800: #166534;
+  --color-status_success-950: #14532d;
+
+  /* breakpoint */
+  --breakpoint-tablet: 810px;
+  --breakpoint-desktop: 1200px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* font size */
+@utility d1 {
+  @apply font-jakarta tablet:text-5xl tablet:leading-15 desktop:text-7xl desktop:leading-27.5 text-[28px] leading-7 font-semibold;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@utility d2 {
+  @apply font-jakarta tablet:text-[44px] tablet:leading-14 desktop:text-[64px] desktop:leading-19 text-2xl leading-7.5 font-semibold;
+}
+
+@utility h1 {
+  @apply font-jakarta tablet:text-[40px] tablet:leading-12 desktop:text-[48px] desktop:leading-14.5 text-[28px] leading-9.5 font-semibold;
+}
+
+@utility h2 {
+  @apply font-jakarta tablet:text-[32px] tablet:leading-9.5 desktop:text-[40px] desktop:leading-12 tablet:font-medium desktop:font-semibold text-[24px] leading-7.5 font-semibold;
+}
+
+@utility h3 {
+  @apply font-jakarta tablet:text-[20px] tablet:leading-6 desktop:text-[48px] desktop:leading-9.5 tablet:font-medium text-[20px] leading-6 font-semibold;
+}
+
+@utility h4 {
+  @apply font-jakarta tablet:text-2xl tablet:leading-7.5 desktop:text-2xl desktop:leading-7.5 tablet:font-medium text-lg leading-6.5 font-semibold;
+}
+
+@utility h5 {
+  @apply font-jakarta tablet:text-[20px] tablet:leading-6 desktop:text-[20px] desktop:leading-6 tablet:font-medium text-base leading-6 font-semibold;
+}
+
+@utility h6 {
+  @apply font-jakarta tablet:text-lg tablet:leading-6 desktop:text-lg desktop:leading-6 text-sm leading-5.5 font-semibold;
+}
+
+@utility body-xl {
+  @apply desktop:text-lg desktop:leading-7 font-inter text-base leading-6 font-normal;
+}
+
+@utility body-lg {
+  @apply desktop:text-lg desktop:leading-7 font-inter text-base leading-6 font-normal;
+}
+
+@utility body-r {
+  @apply desktop:text-base desktop:leading-6 font-inter text-sm leading-5 font-normal;
+}
+
+@utility body-r-medium {
+  @apply desktop:text-base desktop:leading-6 font-inter text-sm leading-5 font-medium;
+}
+
+@utility body-s {
+  @apply desktop:text-sm desktop:leading-5 font-inter text-xs leading-4 font-normal;
+}
+
+@utility button-r {
+  @apply desktop:text-base desktop:leading-5.5 font-inter text-sm leading-5 font-medium;
+}
+
+/* connect the style with tags */
+@layer base {
+  h1 {
+    @apply h1;
+  }
+
+  h2 {
+    @apply h2;
+  }
+
+  h3 {
+    @apply h3;
+  }
+
+  h4 {
+    @apply h4;
+  }
+
+  h5 {
+    @apply h5;
+  }
+
+  h6 {
+    @apply h6;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility container {
+  width: 100%;
+  margin-inline: auto;
+
+  /* tablet */
+  @media (min-width: 810px) {
+    max-width: 960px;
+  }
+
+  /* desktop */
+  @media (min-width: 1200px) {
+    max-width: 1280px;
+  }
 }
