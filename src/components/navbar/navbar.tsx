@@ -2,13 +2,13 @@ import VerveAi from '@/assets/logo/verve-ai.png'
 import ArrowIcon from '@/assets/icons/arrow.svg'
 import Image from 'next/image'
 import Link from 'next/link'
-import MegaMenuToogle from '../ui/megaMenuToogle'
-import FeatureMenu from '../ui/featureMenu'
+import MegaMenuToogle from '../ui/megaMenu/megaMenuToogle'
+// import FeatureMenu from '../ui/megaMenu/featureMenu'
 
 export default function Navbar() {
   return (
-    <header className="flex w-full items-center justify-center px-5 py-6">
-      <nav className="bg-dark-50 relative flex w-full max-w-210.5 items-center justify-between rounded-xl border border-white py-2 pr-2 pl-5.5">
+    <header className="relative flex w-full items-center justify-center px-5 py-6">
+      <nav className="bg-dark-50 flex w-full max-w-210.5 items-center justify-between rounded-xl border border-white py-2 pr-2 pl-5.5">
         {/* logo part */}
         <Link href="/">
           <figure>
@@ -47,7 +47,9 @@ export default function Navbar() {
       </nav>
 
       {/* features menu */}
-      <FeatureMenu />
+      {/* <div className="absolute bottom-0 left-1/2 h-101 w-full max-w-324 -translate-x-1/2 translate-y-full bg-dark-50">
+        <FeatureMenu />
+      </div> */}
     </header>
   )
 }

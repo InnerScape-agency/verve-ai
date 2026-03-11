@@ -4,8 +4,8 @@
  * Can be extended with additional providers as needed.
  */
 
-import Footer from '@/components/footer/footer'
-import Navbar from '@/components/navbar/navbar'
+// import Footer from '@/components/footer/footer'
+// import Navbar from '@/components/navbar/navbar'
 import ReduxProvider from '@/providers/redux.provider'
 import { ReactNode } from 'react'
 
@@ -18,13 +18,13 @@ export default function CustomLayout({ children }: Children) {
     <ReduxProvider>
       <section id="page-wrapper">
         {/* navbar */}
-        <Navbar />
+        {/* <Navbar /> */}
 
         {/* main tag */}
         <main>{children}</main>
 
         {/* footer */}
-        <Footer />
+        {/* <Footer /> */}
       </section>
     </ReduxProvider>
   )
