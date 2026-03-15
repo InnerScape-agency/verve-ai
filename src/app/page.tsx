@@ -1,3 +1,4 @@
+import HomeFeatures from '@/components/home/home.features'
 import HomeHero from '@/components/home/home.hero'
 import HomeHowItWorks from '@/components/home/home.howItWorks'
 
@@ -7,6 +8,8 @@ export default function page() {
       <HomeHero />
 
       <HomeHowItWorks />
+
+      <HomeFeatures />
     </section>
   )
 }
