@@ -17,7 +17,7 @@ export default function FaqContent() {
         >
           {/* question */}
           <div className="flex w-full items-center justify-between">
-            <h3 className="font-jakarta w-full max-w-161.5 text-2xl text-xl font-medium text-white">
+            <h3 className="font-jakarta w-full max-w-161.5 text-xl font-medium text-white">
               {faq.question}
             </h3>
 
