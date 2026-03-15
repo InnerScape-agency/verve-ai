@@ -1,6 +1,7 @@
 import HomeFeatures from '@/components/home/home.features'
 import HomeHero from '@/components/home/home.hero'
 import HomeHowItWorks from '@/components/home/home.howItWorks'
+import HomeSpecialized from '@/components/home/home.specialized'
 
 export default function page() {
   return (
@@ -8,6 +9,8 @@ export default function page() {
       <HomeHero />
 
       <HomeHowItWorks />
+
+      <HomeSpecialized />
 
       <HomeFeatures />
     </section>

@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
-      <body>
+      <body className="bg-[#FDF8EE]">
         <CustomLayout>{children}</CustomLayout>
       </body>
     </html>
