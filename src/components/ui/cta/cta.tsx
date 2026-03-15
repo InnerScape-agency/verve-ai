@@ -1,4 +1,5 @@
 import BgImage from '@/assets/gradient/cta-bg.png'
+import Button from '../button/button'
 
 export default function Cta() {
   return (
@@ -13,7 +14,7 @@ export default function Cta() {
             Ace your live interviews with AI support!
           </h2>
 
-          <button className="font-inter text-dark mt-10 flex cursor-pointer items-center gap-1.5 rounded-lg bg-white px-5 py-4 text-base font-medium">
+          <Button className="mt-10">
             Get Started For Free{' '}
             <svg
               width="16"
@@ -30,7 +31,7 @@ export default function Cta() {
                 strokeLinejoin="round"
               />
             </svg>
-          </button>
+          </Button>
 
           <p className="font-inter mt-4 text-lg font-medium text-white">
             Available on Mac, Windows and iPhone

@@ -7,7 +7,7 @@ export default function WhyChooseContent() {
   const [active, setActive] = useState(whyChooseUs[0])
 
   return (
-    <div className="w-full">
+    <div className="-mb-8 w-full">
       {whyChooseUs.map((item) => (
         <div key={item.id} className="w-full space-y-8">
           <div
@@ -31,7 +31,7 @@ export default function WhyChooseContent() {
           </div>
 
           {/* bar */}
-          <div className="border-dark-200 mb-8 border last:mb-0" />
+          <div className="border-dark-200 mb-8 border" />
         </div>
       ))}
     </div>
