@@ -6,6 +6,7 @@ import HomeWhyChooseUs from '@/components/home/home.whyChooseUs'
 import Cta from '@/components/ui/cta/cta'
 import Faq from '@/components/ui/faq/faq'
 import Plan from '@/components/ui/plan/plan'
+import Testimonials from '@/components/ui/testimonials/testimonials'
 
 export default function page() {
   return (
@@ -21,6 +22,8 @@ export default function page() {
       <HomeWhyChooseUs />
 
       <Plan />
+
+      <Testimonials />
 
       <Faq />
 
