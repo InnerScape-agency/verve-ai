@@ -2,6 +2,7 @@ import HomeFeatures from '@/components/home/home.features'
 import HomeHero from '@/components/home/home.hero'
 import HomeHowItWorks from '@/components/home/home.howItWorks'
 import HomeSpecialized from '@/components/home/home.specialized'
+import HomeWhyChooseUs from '@/components/home/home.whyChooseUs'
 
 export default function page() {
   return (
@@ -13,6 +14,8 @@ export default function page() {
       <HomeSpecialized />
 
       <HomeFeatures />
+
+      <HomeWhyChooseUs />
     </section>
   )
 }
