@@ -5,6 +5,7 @@ import HomeSpecialized from '@/components/home/home.specialized'
 import HomeWhyChooseUs from '@/components/home/home.whyChooseUs'
 import Cta from '@/components/ui/cta/cta'
 import Faq from '@/components/ui/faq/faq'
+import Plan from '@/components/ui/plan/plan'
 
 export default function page() {
   return (
@@ -18,6 +19,8 @@ export default function page() {
       <HomeFeatures />
 
       <HomeWhyChooseUs />
+
+      <Plan />
 
       <Faq />
 

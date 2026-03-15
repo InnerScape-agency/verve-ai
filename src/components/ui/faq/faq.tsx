@@ -1,10 +1,11 @@
 import SectionHeader from '../header/section.header'
+import WrapperDark from '../wrapper/wrapper.dark'
 import FaqContent from './faqContent'
 
 export default function Faq() {
   return (
-    <section className="bg-dark-bg flex w-full max-w-350 items-center justify-center rounded-xl py-24">
-      <div className="container flex w-full flex-col items-center justify-center gap-16">
+    <WrapperDark>
+      <div className="flex w-full flex-col items-center justify-center gap-16">
         {/* section header */}
         <SectionHeader
           semiTitle="FAQ"
@@ -32,6 +33,6 @@ export default function Faq() {
 
         <FaqContent />
       </div>
-    </section>
+    </WrapperDark>
   )
 }

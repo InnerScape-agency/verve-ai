@@ -1,10 +1,11 @@
 import SectionHeader from '../ui/header/section.header'
+import WrapperLight from '../ui/wrapper/wrapper.light'
 import SpecalizedContent from './home.specializedContent'
 
 export default function HomeSpecialized() {
   return (
-    <section className="flex w-full max-w-350 items-center justify-center rounded-xl py-24">
-      <div className="container flex w-full flex-col items-center justify-center gap-16">
+    <WrapperLight>
+      <div className="space-y-16">
         {/* section header */}
         <SectionHeader
           varient="light"
@@ -72,6 +73,6 @@ export default function HomeSpecialized() {
         {/* content */}
         <SpecalizedContent />
       </div>
-    </section>
+    </WrapperLight>
   )
 }

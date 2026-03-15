@@ -2,11 +2,12 @@ import SectionHeader from '../ui/header/section.header'
 
 import Card from '../ui/card/card'
 import { featuresFirstRow, featuresSecondRow } from '@/constant/home/home.features'
+import WrapperDark from '../ui/wrapper/wrapper.dark'
 
 export default function HomeFeatures() {
   return (
-    <section className="bg-dark-bg flex w-full max-w-350 items-center justify-center rounded-xl py-24">
-      <div className="container flex w-full flex-col items-center justify-center gap-16">
+    <WrapperDark>
+      <div className="flex w-full flex-col items-center justify-center gap-16">
         {/* section details */}
         <SectionHeader
           semiTitle="Features"
@@ -73,6 +74,6 @@ export default function HomeFeatures() {
           </div>
         </div>
       </div>
-    </section>
+    </WrapperDark>
   )
 }

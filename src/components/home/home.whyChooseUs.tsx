@@ -1,10 +1,11 @@
 import SectionHeader from '../ui/header/section.header'
+import WrapperLight from '../ui/wrapper/wrapper.light'
 import WhyChooseContent from './home.whyChooseUsContent'
 
 export default function HomeWhyChooseUs() {
   return (
-    <section className="flex w-full max-w-350 items-center justify-center rounded-xl py-24">
-      <div className="container flex w-full items-stretch justify-between gap-40">
+    <WrapperLight>
+      <div className="flex items-stretch justify-between">
         {/* left side */}
         <div className="flex w-full max-w-130 flex-col items-start justify-between">
           <SectionHeader
@@ -61,6 +62,6 @@ export default function HomeWhyChooseUs() {
           <WhyChooseContent />
         </div>
       </div>
-    </section>
+    </WrapperLight>
   )
 }
