@@ -9,16 +9,6 @@ import BezierIcon from '@/assets/icons/BezierCurve.svg'
 
 export default function FeatureMenu() {
   // const { isFeaturesOpen } = useSelector(selectMenuState)
-
-  let renderCount = 1
-
-  const handleRenderCount = () => {
-    console.log(`FeatureMenu rendered ${renderCount} times`)
-    renderCount++
-  }
-
-  handleRenderCount()
-
   return (
     <Activity mode="visible">
       <div className="flex h-full w-full items-center">

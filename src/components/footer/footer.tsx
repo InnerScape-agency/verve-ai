@@ -10,15 +10,15 @@ export default function Footer() {
       <div className="space-y-6">
         {/* links */}
         <nav className="grid grid-cols-5">
-          {footerLinks.map((footerCol, idx) => (
-            <div key={idx} className="flex flex-col gap-6">
+          {footerLinks.map((footerCol) => (
+            <div key={footerCol.title} className="flex flex-col gap-6">
               <h2 className="font-jakarta text-dark text-2xl leading-8 font-semibold">
                 {footerCol.title}
               </h2>
 
               <ul className="space-y-5">
                 {footerCol.links.map((footerLink, id) => (
-                  <li key={id}>
+                  <li key={footerLink.link}>
                     <Link
                       href={footerLink.link}
                       className="font-inter text-dark-800 text-base leading-6 font-medium"

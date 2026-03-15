@@ -14,7 +14,12 @@ export default function WhyChooseContent() {
             className={`w-full items-center rounded-md transition-all duration-300 ${active.id === item.id && 'bg-linear-to-tr from-white via-[#FC632F] via-75% to-white p-px'}`}
           >
             <div
+              role="button"
+              tabIndex={0}
               onClick={() => setActive(item)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') setActive(item)
+              }}
               className={`cursor-pointer rounded-lg px-5 transition ${active.id === item.id ? 'bg-white py-6' : 'py-0 opacity-60'} `}
             >
               <h3 className="font-jakarta text-dark flex items-center gap-2 text-2xl font-medium">

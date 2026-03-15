@@ -14,6 +14,11 @@ export default function FaqContent() {
           key={faq.id}
           className={`flex cursor-pointer flex-col gap-3 rounded-lg p-5 ${activeFaq.id === faq.id ? 'border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.03)]' : ''}`}
           onClick={() => setActiveFaq(faq)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') setActiveFaq(faq)
+          }}
+          role="button"
+          tabIndex={0}
         >
           {/* question */}
           <div className="flex w-full items-center justify-between">
