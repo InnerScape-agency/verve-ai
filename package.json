@@ -10,7 +10,8 @@
     "format": "bunx prettier --write .",
     "format:check": "bunx prettier --check .",
     "validate:code": "bunx -y react-doctor@latest .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "clear": "rm -rf .next node_modules bun.lock"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
