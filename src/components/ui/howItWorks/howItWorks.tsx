@@ -1,9 +1,9 @@
-import Card from '../ui/card/card'
-import SectionHeader from '../ui/header/section.header'
-import { howItWorks } from '@/constant/home/home.howItWorks'
-import WrapperDark from '../ui/wrapper/wrapper.dark'
+import Card from '../card/card'
+import SectionHeader from '../header/section.header'
+import { howItWorks } from '@/constant/howItWorks/howItWorks'
+import WrapperDark from '../wrapper/wrapper.dark'
 
-export default function HomeHowItWorks() {
+export default function HowItWorks() {
   return (
     <WrapperDark>
       <div className="flex w-full flex-col items-center justify-center gap-16">

@@ -1,6 +1,6 @@
 import HomeFeatures from '@/components/home/home.features'
 import HomeHero from '@/components/home/home.hero'
-import HomeHowItWorks from '@/components/home/home.howItWorks'
+import HowItWorks from '@/components/ui/howItWorks/howItWorks'
 import HomeSpecialized from '@/components/home/home.specialized'
 import HomeWhyChooseUs from '@/components/home/home.whyChooseUs'
 import Cta from '@/components/ui/cta/cta'
@@ -13,7 +13,7 @@ export default function page() {
     <section className="flex flex-col items-center justify-center">
       <HomeHero />
 
-      <HomeHowItWorks />
+      <HowItWorks />
 
       <HomeSpecialized />
 
