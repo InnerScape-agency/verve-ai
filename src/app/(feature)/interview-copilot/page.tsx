@@ -1,4 +1,5 @@
 import HeroBg from '@/assets/feature-pages/hero/interview-copilot-hero.png'
+import FeatureHightLights from '@/components/features/feature.highLights'
 import OurFeature from '@/components/features/feature.ourAiFeature'
 import FeatureCTA from '@/components/features/features.cta'
 import FeatureHero from '@/components/features/features.hero'
@@ -25,6 +26,8 @@ export default function Page() {
       <FeatureCTA />
 
       <OurFeature />
+
+      <FeatureHightLights />
 
       <Faq />
 
