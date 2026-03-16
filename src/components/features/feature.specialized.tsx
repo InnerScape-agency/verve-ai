@@ -71,7 +71,7 @@ export default function FeatureSpecialized() {
           </p>
 
           <button className="font-inter text-dark bg-primary mt-10 flex cursor-pointer items-center gap-1.5 rounded-lg px-6 py-4 text-base font-medium">
-            Get Started For Free <ChevronRight width={16} height={16} />
+            Get Started <ChevronRight width={16} height={16} />
           </button>
         </div>
       </div>
