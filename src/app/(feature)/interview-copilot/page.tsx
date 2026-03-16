@@ -37,7 +37,7 @@ export default function Page() {
 
       <Faq />
 
-      <Cta />
+      <Cta varient="withImage" />
     </section>
   )
 }
