@@ -17,8 +17,8 @@ export default function Footer() {
               </h2>
 
               <ul className="space-y-5">
-                {footerCol.links.map((footerLink, id) => (
-                  <li key={footerLink.link}>
+                {footerCol.links.map((footerLink) => (
+                  <li key={footerLink.title.split(' ').join('-').toLowerCase()}>
                     <Link
                       href={footerLink.link}
                       className="font-inter text-dark-800 text-base leading-6 font-medium"

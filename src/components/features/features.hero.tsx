@@ -1,6 +1,8 @@
 import { ChevronRight } from 'lucide-react'
 import Image, { StaticImageData } from 'next/image'
 import HeroBg from '@/assets/gradient/Hero.png'
+import clsx from 'clsx'
+import Clients from '../ui/clients/clients'
 
 interface FeatureHeroProps {
   badge: string
@@ -8,6 +10,9 @@ interface FeatureHeroProps {
   heading: string
   description: string
   heroImage: StaticImageData
+  width?: string
+  imageHeight?: string
+  isClients?: boolean
 }
 
 export default function FeatureHero({
@@ -16,6 +21,9 @@ export default function FeatureHero({
   heading,
   description,
   heroImage,
+  width,
+  imageHeight,
+  isClients = false,
 }: FeatureHeroProps) {
   return (
     <section
@@ -43,7 +51,7 @@ export default function FeatureHero({
           {/* content */}
           <div className="mt-5 mb-8 flex flex-col items-center gap-4">
             {/* title */}
-            <h1 className="d2 max-w-180 text-center">{heading}</h1>
+            <h1 className={clsx('d2 text-center', width ? width : 'max-w-180')}>{heading}</h1>
 
             {/* description */}
             <p className="body-lg max-w-130.5 text-center">{description}</p>
@@ -56,12 +64,16 @@ export default function FeatureHero({
         </div>
 
         {/* mid content */}
-
         <Image
           src={heroImage}
           alt={heading}
-          className="flex h-134 w-full max-w-260 items-center justify-center bg-cover"
+          className={clsx(
+            'flex w-full max-w-260 items-center justify-center bg-cover',
+            imageHeight ? imageHeight : 'h-134',
+          )}
         />
+
+        {isClients && <Clients />}
       </div>
     </section>
   )
