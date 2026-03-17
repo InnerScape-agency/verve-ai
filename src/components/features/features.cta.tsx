@@ -1,7 +1,5 @@
 import CtaBG from '@/assets/gradient/feature-cta-1.png'
-import SectionHeader from '../ui/header/section.header'
 import Badge from '../ui/badge/badge'
-import Button from '../ui/button/button'
 
 export default function FeatureCTA() {
   return (

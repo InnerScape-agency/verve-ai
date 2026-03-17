@@ -7,6 +7,7 @@ import FeatureSpecialized from '@/components/features/feature.specialized'
 import FeatureCTA from '@/components/features/features.cta'
 import FeatureHero from '@/components/features/features.hero'
 import Undetectable from '@/components/features/features.undetectable'
+import LeetcodeCTA from '@/components/features/leetcodeCta'
 import Cta from '@/components/ui/cta/cta'
 import Faq from '@/components/ui/faq/faq'
 import HowItWorks from '@/components/ui/howItWorks/howItWorks'
@@ -25,6 +26,8 @@ export default function Page() {
       <HowItWorks />
 
       <Undetectable />
+
+      <LeetcodeCTA />
 
       <FeatureCodingWorkflow />
 
