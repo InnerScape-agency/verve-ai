@@ -3,6 +3,7 @@ import Image, { StaticImageData } from 'next/image'
 import HeroBg from '@/assets/gradient/Hero.png'
 import clsx from 'clsx'
 import Clients from '../ui/clients/clients'
+import { Activity } from 'react'
 
 interface FeatureHeroProps {
   badge: string
@@ -11,8 +12,11 @@ interface FeatureHeroProps {
   description: string
   heroImage: StaticImageData
   width?: string
+  desWidth?: string
   imageHeight?: string
   isClients?: boolean
+  isBadges?: boolean
+  badges?: string[]
 }
 
 export default function FeatureHero({
@@ -22,8 +26,11 @@ export default function FeatureHero({
   description,
   heroImage,
   width,
+  desWidth,
   imageHeight,
   isClients = false,
+  isBadges = false,
+  badges,
 }: FeatureHeroProps) {
   return (
     <section
@@ -54,13 +61,61 @@ export default function FeatureHero({
             <h1 className={clsx('d2 text-center', width ? width : 'max-w-180')}>{heading}</h1>
 
             {/* description */}
-            <p className="body-lg max-w-130.5 text-center">{description}</p>
+            <p className={clsx('body-lg text-center', desWidth ? desWidth : 'max-w-130.5')}>
+              {description}
+            </p>
           </div>
 
           {/* actios */}
           <button className="font-inter text-dark bg-primary flex cursor-pointer items-center gap-1.5 rounded-lg px-6 py-4 text-base font-medium">
             Get Started For Free <ChevronRight width={16} height={16} />
           </button>
+
+          {/* badges */}
+          <Activity mode={isBadges ? 'visible' : 'hidden'}>
+            <div className="flex items-center justify-center gap-6">
+              {badges?.map((badge) => (
+                <div key={badge} className="mt-15 flex items-center gap-1">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_7635_47034)">
+                      <path
+                        opacity="0.2"
+                        d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z"
+                        fill="#29C979"
+                      />
+                      <path
+                        d="M6.875 10.625L8.75 12.5L13.125 8.125"
+                        stroke="#29C979"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z"
+                        stroke="#29C979"
+                        stroke-width="1.3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_7635_47034">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <span className="font-inter text-base font-normal text-black">{badge}</span>
+                </div>
+              ))}
+            </div>
+          </Activity>
         </div>
 
         {/* mid content */}
