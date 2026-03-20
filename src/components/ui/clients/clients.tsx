@@ -6,7 +6,7 @@ import Client5 from '@/assets/clients/5.png'
 import Client6 from '@/assets/clients/6.png'
 import Image from 'next/image'
 
-const clients = [Client1, Client2, Client3, Client4, Client5, Client6]
+export const clients = [Client1, Client2, Client3, Client4, Client5, Client6]
 
 export default function Clients() {
   return (
