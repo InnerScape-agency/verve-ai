@@ -6,19 +6,16 @@ import Link from 'next/link'
 export default function InterviewCard({ interview }: { interview: Interview }) {
   return (
     <div className="space-y-6">
-      <figure
-        style={{ backgroundImage: `url(${GradientImage.src})` }}
-        className="w-full rounded-lg bg-cover bg-no-repeat px-6.5 py-12"
-      >
+      <figure className="w-full rounded-lg bg-[#161616] px-6.5 py-12">
         <Image src={interview.image} alt={interview.title} className="h-full w-full" />
       </figure>
 
       <div>
-        <h3 className="font-jakarta text-dark text-2xl leading-7.5 font-medium">
+        <h3 className="font-jakarta text-dark-200 text-2xl leading-7.5 font-medium">
           {interview.title}
         </h3>
 
-        <p className="font-inter text-dark mt-3 mb-6 max-w-82.5 text-base leading-6">
+        <p className="font-inter text-dark-600 mt-3 mb-6 max-w-82.5 text-base leading-6">
           {interview.description}
         </p>
 
@@ -26,7 +23,7 @@ export default function InterviewCard({ interview }: { interview: Interview }) {
           href={interview.link}
           className="font-inter flex items-center gap-1 text-base leading-5.5 text-[#FE7F28]"
         >
-          Learn More
+          Start Now
           <svg
             width="16"
             height="16"

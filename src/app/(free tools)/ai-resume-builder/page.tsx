@@ -1,5 +1,7 @@
 import FreeToolsHero from '@/components/freeTools/freeTools.hero'
 import HeroImage from '@/assets/free-tools/hero/ai-resume-builder.png'
+import FeatureInterviewMadeEasy from '@/components/features/feature.interviewMadeEasy'
+import HowItWorks from '@/components/ui/howItWorks/howItWorks'
 
 export default function page() {
   return (
@@ -12,6 +14,10 @@ export default function page() {
         btnLink="#"
         heroImage={HeroImage}
       />
+
+      <HowItWorks />
+
+      <FeatureInterviewMadeEasy varient="dark" />
     </section>
   )
 }
