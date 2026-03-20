@@ -1,7 +1,6 @@
 import FreeToolsHero from '@/components/freeTools/freeTools.hero'
 import HeroImage from '@/assets/free-tools/hero/ai-email-generator.png'
 import FeatureInterviewMadeEasy from '@/components/features/feature.interviewMadeEasy'
-import HowItWorks from '@/components/ui/howItWorks/howItWorks'
 import Testimonials from '@/components/ui/testimonials/testimonials'
 import Faq from '@/components/ui/faq/faq'
 import Cta from '@/components/ui/cta/cta'
