@@ -9,3 +9,12 @@ export interface Sepcialized {
   link: string
   icon: ReactNode
 }
+
+export interface HotTools {
+  id: string
+  title: string
+  description: string
+  image: StaticImageData
+  link: string
+  icon: ReactNode
+}

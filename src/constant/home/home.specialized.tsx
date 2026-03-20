@@ -1,10 +1,13 @@
-import { Sepcialized } from '@/types/specialized.type'
+import { HotTools, Sepcialized } from '@/types/specialized.type'
 import Specalized1 from '@/assets/home/sepcialized/1.png'
 import Specalized2 from '@/assets/home/sepcialized/2.png'
 import Specalized3 from '@/assets/home/sepcialized/3.png'
 import Specalized4 from '@/assets/home/sepcialized/4.png'
 import Specalized5 from '@/assets/home/sepcialized/5.png'
 import Specalized6 from '@/assets/home/sepcialized/6.png'
+import Hot1 from '@/assets/home/sepcialized/hot-1.png'
+import Hot2 from '@/assets/home/sepcialized/hot-2.png'
+import Hot3 from '@/assets/home/sepcialized/hot-3.png'
 
 export const specialized: Sepcialized[] = [
   {
@@ -281,6 +284,154 @@ export const specialized: Sepcialized[] = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
+      </svg>
+    ),
+  },
+]
+
+export const hotTools: HotTools[] = [
+  {
+    id: 'ats-checker',
+    title: 'ATS Checker',
+    description:
+      'Our designs communicate your message clearly while captivating audiences and enhancing user engagement consistently.',
+    image: Hot1,
+    link: '#',
+    icon: (
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 28 28"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_7760_32717)">
+          <path opacity="0.2" d="M19.25 8.75H8.75V19.25H19.25V8.75Z" fill="black" />
+          <path
+            d="M19.25 4.375H23.625V8.75"
+            stroke="black"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M8.75 23.625H4.375V19.25"
+            stroke="black"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M23.625 19.25V23.625H19.25"
+            stroke="black"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M4.375 8.75V4.375H8.75"
+            stroke="black"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M19.25 8.75H8.75V19.25H19.25V8.75Z"
+            stroke="black"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_7760_32717">
+            <rect width="28" height="28" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    ),
+  },
+  {
+    id: 'cover-letter',
+    title: 'Cover Letter',
+    description:
+      'Our designs communicate your message clearly while captivating audiences and enhancing user engagement consistently.',
+    image: Hot2,
+    link: '#',
+    icon: (
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 28 28"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_7760_38426)">
+          <path opacity="0.2" d="M24.5 6.125L14 15.75L3.5 6.125H24.5Z" fill="black" />
+          <path
+            d="M3.5 6.125H24.5V21C24.5 21.2321 24.4078 21.4546 24.2437 21.6187C24.0796 21.7828 23.8571 21.875 23.625 21.875H4.375C4.14294 21.875 3.92038 21.7828 3.75628 21.6187C3.59219 21.4546 3.5 21.2321 3.5 21V6.125Z"
+            stroke="black"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M24.5 6.125L14 15.75L3.5 6.125"
+            stroke="black"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_7760_38426">
+            <rect width="28" height="28" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    ),
+  },
+  {
+    id: 'thank-you-email',
+    title: 'Thank you Email',
+    description:
+      'Our designs communicate your message clearly while captivating audiences and enhancing user engagement consistently.',
+    image: Hot3,
+    link: '#',
+    icon: (
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 28 28"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_7760_38433)">
+          <path
+            opacity="0.2"
+            d="M14 24.5C14 24.5 2.625 18.375 2.625 11.1562C2.625 9.58982 3.24726 8.08754 4.3549 6.9799C5.46254 5.87226 6.96482 5.25 8.53125 5.25C11.002 5.25 13.1184 6.59641 14 8.75C14.8816 6.59641 16.998 5.25 19.4688 5.25C21.0352 5.25 22.5375 5.87226 23.6451 6.9799C24.7527 8.08754 25.375 9.58982 25.375 11.1562C25.375 18.375 14 24.5 14 24.5Z"
+            fill="black"
+          />
+          <path
+            d="M3.5 14.875H7.875L9.625 12.25L13.125 17.5L14.875 14.875H17.5"
+            stroke="black"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M2.625 11.375C2.625 11.3017 2.625 11.2295 2.625 11.1562C2.625 9.58982 3.24726 8.08754 4.3549 6.9799C5.46254 5.87226 6.96482 5.25 8.53125 5.25C11.002 5.25 13.1184 6.59641 14 8.75C14.8816 6.59641 16.998 5.25 19.4688 5.25C21.0352 5.25 22.5375 5.87226 23.6451 6.9799C24.7527 8.08754 25.375 9.58982 25.375 11.1562C25.375 18.375 14 24.5 14 24.5C14 24.5 9.40625 22.0281 6.06156 18.375"
+            stroke="black"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_7760_38433">
+            <rect width="28" height="28" fill="white" />
+          </clipPath>
+        </defs>
       </svg>
     ),
   },
