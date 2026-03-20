@@ -1,7 +1,4 @@
-import { ChevronLeft, ChevronRight, Download, Globe, Info } from 'lucide-react'
-import VideoOverlayImage from '@/assets/home/hero-video-overlay.webp'
-import PlayIcon from '@/assets/icons/play.svg'
-import Image from 'next/image'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 import HeroBg from '@/assets/gradient/Hero.png'
 import Link from 'next/link'
 
