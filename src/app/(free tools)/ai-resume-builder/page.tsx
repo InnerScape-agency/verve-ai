@@ -6,6 +6,7 @@ import Testimonials from '@/components/ui/testimonials/testimonials'
 import Faq from '@/components/ui/faq/faq'
 import Cta from '@/components/ui/cta/cta'
 import FreeHotTools from '@/components/freeTools/free.hotTools'
+import FreeToolCards from '@/components/freeTools/freeToolCards'
 
 export default function page() {
   return (
@@ -18,6 +19,8 @@ export default function page() {
         btnLink="#"
         heroImage={HeroImage}
       />
+
+      <FreeToolCards />
 
       <HowItWorks />
 
