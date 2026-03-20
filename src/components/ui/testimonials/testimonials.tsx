@@ -5,7 +5,7 @@ import PosterImage from '@/assets/poster/poster.png'
 import TestimonialCard from './testimonialCard'
 import WrapperDark from '../wrapper/wrapper.dark'
 
-export default function Testimonials({ varient = 'list' }: { varient: 'list' | 'grid' }) {
+export default function Testimonials({ varient = 'list' }: { varient?: 'list' | 'grid' }) {
   switch (varient) {
     case 'list':
       return (
