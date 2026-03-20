@@ -7,6 +7,8 @@ import Cta from '@/components/ui/cta/cta'
 import Faq from '@/components/ui/faq/faq'
 import HowItWorks from '@/components/ui/howItWorks/howItWorks'
 
+const testFunction = () => {}
+
 export default function Page() {
   return (
     <section className="flex flex-col items-center justify-center">

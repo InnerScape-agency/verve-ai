@@ -10,13 +10,14 @@ interface FeatureHeroProps {
   badgeSemiTitle: string
   heading: string
   description: string
-  heroImage: StaticImageData
+  heroImage?: StaticImageData
   width?: string
   desWidth?: string
   imageHeight?: string
   isClients?: boolean
   isBadges?: boolean
   badges?: string[]
+  heroBGImage?: StaticImageData
 }
 
 export default function FeatureHero({
@@ -31,10 +32,15 @@ export default function FeatureHero({
   isClients = false,
   isBadges = false,
   badges,
+  heroBGImage,
 }: FeatureHeroProps) {
   return (
     <section
-      style={{ backgroundImage: `url(${HeroBg.src})`, backgroundSize: `100% 100%` }}
+      style={
+        heroBGImage
+          ? { backgroundImage: `url(${heroBGImage.src})`, backgroundSize: `100% 100%` }
+          : { backgroundImage: `url(${HeroBg.src})`, backgroundSize: `100% 100%` }
+      }
       className="h-fit w-full bg-cover bg-no-repeat py-49 pb-20"
     >
       {/* container */}
@@ -119,15 +125,16 @@ export default function FeatureHero({
         </div>
 
         {/* mid content */}
-        <Image
-          src={heroImage}
-          alt={heading}
-          className={clsx(
-            'flex w-full max-w-260 items-center justify-center bg-cover',
-            imageHeight ? imageHeight : 'h-134',
-          )}
-        />
-
+        {heroImage && (
+          <Image
+            src={heroImage}
+            alt={heading}
+            className={clsx(
+              'flex w-full max-w-260 items-center justify-center bg-cover',
+              imageHeight ? imageHeight : 'h-134',
+            )}
+          />
+        )}
         {isClients && <Clients />}
       </div>
     </section>
