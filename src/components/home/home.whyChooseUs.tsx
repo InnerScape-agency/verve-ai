@@ -1,12 +1,11 @@
 import Image from 'next/image'
 import SectionHeader from '../ui/header/section.header'
-import WrapperLight from '../ui/wrapper/wrapper.light'
 import WhyChooseContent from './home.whyChooseUsContent'
 import BGImage from '@/assets/gradient/why-choose-us.png'
 
 export default function HomeWhyChooseUs() {
   return (
-    <section className="relative flex w-full max-w-350 items-center justify-center rounded-xl py-24">
+    <section className="relative flex w-full max-w-350 items-center justify-center overflow-hidden rounded-xl py-24">
       <div className="container">
         <div className="flex items-stretch justify-between">
           {/* left side */}
@@ -70,7 +69,7 @@ export default function HomeWhyChooseUs() {
       <Image
         src={BGImage}
         alt="why-choose-us-bg-image"
-        className="absolute -right-60 -bottom-60 -z-1 h-full w-full"
+        className="absolute -right-3/5 -bottom-60 -z-1 h-full w-full"
       />
     </section>
   )
