@@ -31,7 +31,7 @@ export default function page() {
 
       <Testimonials varient={'grid'} />
 
-      <FreeHotTools />
+      <FreeHotTools varient="grid" />
 
       <Faq />
 

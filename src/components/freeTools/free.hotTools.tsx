@@ -1,8 +1,9 @@
 import SectionHeader from '../ui/header/section.header'
 import WrapperLight from './../ui/wrapper/wrapper.light'
+import FreeHotToolsGrid from './freeHotTools.grid'
 import HotTools from './hotTools'
 
-export default function FreeHotTools() {
+export default function FreeHotTools({ varient = 'list' }: { varient?: 'list' | 'grid' }) {
   return (
     <WrapperLight>
       <div className="space-y-16">
@@ -33,7 +34,7 @@ export default function FreeHotTools() {
         />
 
         {/* content */}
-        <HotTools />
+        {varient === 'list' ? <HotTools /> : <FreeHotToolsGrid />}
       </div>
     </WrapperLight>
   )

@@ -2,7 +2,6 @@ import { interviews, interviewsLight } from '@/constant/feature/interview'
 import InterviewCard from './interview.card'
 import Badge from '../ui/badge/badge'
 import WrapperDark from '../ui/wrapper/wrapper.dark'
-import SectionHeader from '../ui/header/section.header'
 
 export default function FeatureInterviewMadeEasy({
   varient = 'light',
@@ -147,6 +146,7 @@ export default function FeatureInterviewMadeEasy({
                 <InterviewCard
                   key={interview.title.split(' ').join('-').toLowerCase()}
                   interview={interview}
+                  varient="dark"
                 />
               ))}
             </div>
